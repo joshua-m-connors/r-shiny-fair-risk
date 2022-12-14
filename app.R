@@ -878,7 +878,7 @@ ui <- fluidPage(
   ),
   
 )
-# Define server logic ----
+# Define server logic -----
 server <- function(input, output, session) {
   
   library(ggplot2)
