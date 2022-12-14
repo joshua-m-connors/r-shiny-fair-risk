@@ -20,7 +20,7 @@ The inherent risk results are not provided when evaluating Likelihood directly d
   - Increasing the TEF by 20% (assumes increased threat activity in the absences of controls)
   - Setting the VULN percentage to 95% (assumes there are some controls (5%) that are outside of the control of the organization)
 
-These values were set somewhat arbitrarily, but the 95% VULN percentage is equivelent to a TCAP of 1% - 99% and a RS of 1% - 1%.
+These values were set somewhat arbitrarily, but the 95% VULN percentage is equivalent to a TCAP of 1% - 99% and a RS of 1% - 1%.
 
 To use the Shiny applications you will need:
   - Rstudio - https://www.rstudio.com
