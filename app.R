@@ -48,6 +48,15 @@ ui <- fluidPage(
                      value = Sys.Date()))
   ),
   
+  checkboxGroupInput("threatcheckGroup", label = h4("Threat Type(s) In Scope"), 
+                     choices = list("External Deliberate" = 1, "External Not Deliberate" = 2, "Internal Deliberate" = 3, "Internal Not Deliberate" = 4, "Natural" = 5)),
+  
+  checkboxGroupInput("vulncheckGroup", label = h4("Vulnerability Type(s) In Scope"), 
+                     choices = list("People" = 1, "Process" = 2, "Technology" = 3, "Partners" = 4)),
+  
+  checkboxGroupInput("losscheckGroup", label = h4("Impact/Loss Type(s) In Scope"), 
+                     choices = list("Confidentiality" = 1, "Integrity" = 2, "Availability" = 3, "Privacy" = 4)),
+  
   fluidRow(
     column(4,
            textAreaInput("text", h3("Risk Analysis Description"), width = '100%',
