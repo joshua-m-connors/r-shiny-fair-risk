@@ -30,7 +30,7 @@ Open the app.R file in RStudio and click the Run App button in the top right cor
 
 The application is written to be reactive, therefore results will update dynamically as other values are changed.
 
-A demo version of the application can be viewed at SinyApps.io: https://jconnors.shinyapps.io/r-shiny-fair-risk-github/
+A demo version of the application can be viewed at ShinyApps.io: https://jconnors.shinyapps.io/r-shiny-fair-risk-github/
 - Note: this is posted under the free tier so excessive (>10 hours per month) use will result in the application becoming inaccessible.
 
 Shiny Application Screen:
