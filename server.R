@@ -718,7 +718,7 @@ server <- function(input, output, session) {
       rlnorm(n,f_cs_mean(),f_cs_sd())
     }
   })
-  # Calculate the Current Likelihood (CS)
+  # Calculate the Current Likelihood (LKH)
   lkh_temp2 <- reactive({
     if (lkh_option()==2) {
       rpoilog(n,lkh_mean(),lkh_sd())
@@ -780,7 +780,7 @@ server <- function(input, output, session) {
       f_vuln_percent()
     }
   })
-  ## Assumes the Inherent Vulnerability level is 90%
+  ## Assumes the Inherent Vulnerability level is 95%
   in_vuln <- 0.95
   # Calculate the Current Residual Primary Likelihood (LKH)
   lkh_temp1 <- reactive({
@@ -801,7 +801,7 @@ server <- function(input, output, session) {
   })
   ## Assumes that the Threat Event Frequency increases 20% in the absense of controls
   in_tef <- reactive({
-    tef() * 1.1
+    tef() * 1.2
   })
   in_lkh <- reactive({
     round(in_tef() * in_vuln, digits = 2)
